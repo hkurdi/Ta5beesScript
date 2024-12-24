@@ -1,0 +1,51 @@
+khalli display = document.getElementById("display");
+khalli currentNumber = "";
+khalli previousNumber = "";
+khalli operation = null;
+
+arrifli updateDisplay() {
+  display.value = currentNumber || "0";
+}
+
+arrifli appendNumber(number) {
+  currentNumber = currentNumber + number;
+  updateDisplay();
+}
+
+arrifli setOperation(op) {
+  previousNumber = currentNumber;
+  currentNumber = "";
+  operation = op;
+}
+
+arrifli calculate() {
+
+  thabit prev = parseFloat(previousNumber);
+  thabit current = parseFloat(currentNumber);
+  thabit sum = prev + current;
+  thabit diff = prev - current;
+  thabit prod = prev * current;
+  thabit quotient = prev / current;
+
+
+  iza (operation == "+") { 
+    currentNumber = sum.toString();
+  } willa iza (operation == "-") { 
+    currentNumber = diff.toString();
+  } willa iza (operation == "*") {
+    currentNumber = prod.toString();
+  } willa iza (operation == "/") {
+    currentNumber = quotient.toString();
+  }
+  updateDisplay();
+}
+
+arrifli clear() {
+  currentNumber = "";
+  previousNumber = "";
+  operation = null;
+  updateDisplay();
+}
+
+khalli clearButton = document.getElementById("clear");
+clearButton.addEventListener("click", clear);

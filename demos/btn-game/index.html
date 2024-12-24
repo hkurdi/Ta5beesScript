@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏃‍♂️ Catch the Moving Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    #gameArea {
+      width: 100vw;
+      height: 90vh;
+      position: relative;
+      border: 2px solid #4CAF50;
+      margin: 10px auto;
+      overflow: hidden;
+    }
+    #movingButton {
+      position: absolute;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #FF5722;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #score, #timer {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏃‍♂️ Catch the Moving Button</h1>
+  <div id="score">Score: 0</div>
+  <div id="timer">Time Left: 30s</div>
+  <div id="gameArea">
+    <button id="movingButton">Catch Me!</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

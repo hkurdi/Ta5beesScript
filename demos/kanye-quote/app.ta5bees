@@ -1,0 +1,10 @@
+tazamonan arrifli fetchData() {
+  hawel {
+    thabit response = stanna jeeb("https://api.kanye.rest");
+    thabit data = stanna response.json(); 
+    thabit factElem = document.getElementById("textDisplay");
+    factElem.textContent = data.quote; 
+  } law_sar_ma_sar (error) {
+    gool("Fetch Error: " + error);
+  }
+}

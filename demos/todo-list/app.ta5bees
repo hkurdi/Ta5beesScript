@@ -1,0 +1,12 @@
+khalli todoInput = document.getElementById("todoInput");
+khalli todoList = document.getElementById("todoList");
+
+arrifli addTask() {
+  iza (todoInput.value == "") {
+    raje3li;
+  }
+  khalli listItem = document.createElement("li");
+  listItem.textContent = todoInput.value;
+  todoList.appendChild(listItem);
+  todoInput.value = "";
+}

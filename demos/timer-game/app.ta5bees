@@ -1,0 +1,49 @@
+// Constants
+thabit delayRange = [1000, 5000]; // Random delay between 1s to 5s
+
+// Variables
+khalli startTime = 0;
+khalli endTime = 0;
+khalli reactionTime = 0;
+
+// DOM Elements
+thabit button = document.getElementById("reactionButton");
+thabit display = document.getElementById("display");
+thabit timerDisplay = document.getElementById("timer");
+
+// Initialize Game
+arrifli startGame() {
+    display.textContent = "Wait for the button to turn green...";
+    button.style.backgroundColor = "red";
+    button.disabled = true;
+
+    khalli randomDelay = Math.floor(
+        Math.random() * (delayRange[1] - delayRange[0]) + delayRange[0]
+    );
+
+    setTimeout(() => {
+        button.style.backgroundColor = "green";
+        button.disabled = false;
+        startTime = Date.now();
+        display.textContent = "Click Now!";
+    }, randomDelay);
+}
+
+// Handle Click
+arrifli handleClick() {
+    iza (button.disabled == true) {
+    display.textContent = "Too early! Refresh the page to try again.";
+        raje3li;
+    }
+
+    endTime = Date.now();
+    reactionTime = endTime - startTime;
+
+    timerDisplay.textContent = "Reaction Time: " + reactionTime + " ms";
+    display.textContent = "Good Job! Refresh the page to play again.";
+    button.disabled = true;
+}
+
+// Start the Game
+button.addEventListener("click", handleClick);
+startGame();

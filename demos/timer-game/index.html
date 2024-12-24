@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚡ Reaction Timer Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+    }
+    h1 {
+      color: #4CAF50;
+      margin-top: 50px;
+    }
+    #display {
+      font-size: 1.5em;
+      margin: 20px;
+      color: #333;
+    }
+    #timer {
+      font-size: 1.2em;
+      margin: 10px;
+      color: #666;
+    }
+    #reactionButton {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    #reactionButton[disabled] {
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚡ Reaction Timer Game</h1>
+  <div id="display">Press the button when it turns green!</div>
+  <div id="timer">Reaction Time: -- ms</div>
+  <button id="reactionButton" style="background-color: red;">Start</button>
+  <script src="app.js"></script>
+</body>
+</html>
