@@ -13,7 +13,7 @@ import {
     MK_OBJECT,
     MK_STRING,
     MK_ARRAY,
-  } from "../runtime/values.ts";
+  } from "../runtime/values.js";
   import {
     Statement,
     Program,
@@ -37,8 +37,8 @@ import {
     ThrowStatement,
     AwaitExpression,
     AsyncExpression,
-  } from "../frontend/ast.ts";
-  import { SourceMap } from "../../cli/src/utils/sourcemap.ts";
+  } from "../frontend/ast.js";
+  import { SourceMap } from "../../utils/sourcemap.js";
   
   interface JSObject {
     [key: string]: unknown;

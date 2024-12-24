@@ -1,1 +1,0 @@
-export const secret = "Amazing language made by legend Hamza Luay Ashraf Kurdi\n\n good job finding this\n\n";
