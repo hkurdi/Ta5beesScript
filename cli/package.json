@@ -1,6 +1,6 @@
 {
   "name": "ta5beesscript",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publisher": "whoishlk",
 "description": "CLI for Ta5beesScript – The first Arabeezi programming language, built by Hamza Luay Ashraf Kurdi, 2024.",
   "readme": "README.md",
@@ -22,7 +22,9 @@
   "keywords": [
     "ta5bees",
     "programming-language",
-    "cli"
+    "cli",
+    "arabeezi",
+    "arabic-programming-language"
   ],
   "dependencies": {
     "commander": "^11.0.0"

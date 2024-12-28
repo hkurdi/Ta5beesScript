@@ -15,31 +15,32 @@
 ### Installation
 
 ```sh
-npm install -g ta5bees-cli
+npm install -g ta5beesscript
+npx ta5bees
 ```
 
 ### Commands
 
 - **Compile a Ta5beesScript file to JavaScript:**
   ```sh
-  ta5bees compile <file.ta5bees> 
+  npx ta5bees compile <file.ta5bees> 
   ```
 
 - **Run a Ta5beesScript file directly:**
   ```sh
-  ta5bees run <file.ta5bees>
+  npx ta5bees run <file.ta5bees>
   ```
 
 - **Watch mode for development:**
   ```sh
-  ta5bees compile <file.ta5bees> -w
+  npx ta5bees compile <file.ta5bees> -w
   ```
 
 ---
 
 ## Usage
 
-1. **Install** the extension from the VS Code marketplace (or load it manually).
+1. **Install** the extension from the VS Code marketplace.
 2. **Open** any file with a `.ta5bees` extension.
 3. **Enjoy** syntax highlighting, snippets, and a comedic twist on your code.
 
@@ -91,17 +92,6 @@ This extension contributes the following settings:
 
 - **Deep** IntelliSense is limited—this is basically a comedic side project, not the next big enterprise language.  
 - **Refactoring Tools** are minimal because we’re still mocking TypeScript (and maybe ourselves).
-
----
-
-## Release Notes
-
-### 0.2
-- Initial release of Ta5bees extension.
-- Basic syntax highlighting, snippets, and comedic commentary.
-
-## 0.1
-- Initial release of Ta5beesScript.
 
 ---
 
